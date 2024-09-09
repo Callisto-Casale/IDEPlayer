@@ -25,7 +25,6 @@ Beware: The deeper you venture, the deadlier the enemies become. Are you ready t
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/955ef2f4-aba6-47bb-881f-557a949c295c" alt="Image 2" width="190" />
-  <img src="https://github.com/user-attachments/assets/ac4e4703-5f0d-4e4d-9163-4201ca3fbb30" alt="Image 1" width="190" />
   <img src="https://github.com/user-attachments/assets/1b679ecd-feea-4730-9b3b-9e0838ebae97" alt="Image 1" width="190" />
   <img src="https://github.com/user-attachments/assets/87f34434-e170-458f-8bbc-33c3a85d1e75" alt="Image 3" width="190" />
   <img src="https://github.com/user-attachments/assets/804c7347-3e69-4732-a122-1b2f6afaa189" alt="Image 4" width="190" />
