@@ -38,7 +38,6 @@ class Map:
         
         _map[player_y][player_x] = "P"
         
-        
         # Add a wall with the ■ character
         for i in range(0, self.width):
             _map[0][i] = "■"

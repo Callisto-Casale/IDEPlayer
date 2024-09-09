@@ -1,0 +1,160 @@
+{
+    "enemies" : {
+        "easy": [
+            {"name": "Goblin", "hp": 100, "damage": 10, "type": "Melee", "level": 1},
+            {"name": "Slime", "hp": 80, "damage": 5, "type": "Elemental", "level": 1},
+            {"name": "Bandit", "hp": 120, "damage": 12, "type": "Melee", "level": 2},
+            {"name": "Skeleton", "hp": 100, "damage": 10, "type": "Undead", "level": 1},
+            {"name": "Cave Bat", "hp": 90, "damage": 8, "type": "Beast", "level": 1},
+            {"name": "Zombie", "hp": 110, "damage": 12, "type": "Undead", "level": 1},
+            {"name": "Rogue", "hp": 120, "damage": 14, "type": "Stealth", "level": 2},
+            {"name": "Wild Wolf", "hp": 130, "damage": 15, "type": "Beast", "level": 2},
+            {"name": "Swamp Lizard", "hp": 100, "damage": 10, "type": "Elemental", "level": 3},
+            {"name": "Thief", "hp": 90, "damage": 7, "type": "Melee", "level": 1}
+        ],
+        "simple": [
+            {"name": "Orc Grunt", "hp": 250, "damage": 25, "type": "Melee", "level": 4},
+            {"name": "Fire Wisp", "hp": 150, "damage": 20, "type": "Elemental", "level": 3},
+            {"name": "Skeleton Archer", "hp": 200, "damage": 18, "type": "Ranged", "level": 3},
+            {"name": "Bandit Leader", "hp": 180, "damage": 22, "type": "Melee", "level": 4},
+            {"name": "Dire Wolf", "hp": 220, "damage": 20, "type": "Beast", "level": 3},
+            {"name": "Ghoul", "hp": 210, "damage": 22, "type": "Undead", "level": 4},
+            {"name": "Lava Lizard", "hp": 180, "damage": 25, "type": "Elemental", "level": 3},
+            {"name": "Assassin", "hp": 170, "damage": 30, "type": "Stealth", "level": 4},
+            {"name": "Troll Scout", "hp": 240, "damage": 28, "type": "Melee", "level": 4},
+            {"name": "Frost Bat", "hp": 160, "damage": 18, "type": "Beast", "level": 3}
+        ],
+        "moderate": [
+            {"name": "Orc Warrior", "hp": 350, "damage": 35, "type": "Melee", "level": 5},
+            {"name": "Stone Golem", "hp": 400, "damage": 40, "type": "Stone", "level": 5},
+            {"name": "Dark Mage", "hp": 300, "damage": 35, "type": "Magic", "level": 5},
+            {"name": "Troll Bruiser", "hp": 450, "damage": 45, "type": "Melee", "level": 6},
+            {"name": "Banshee", "hp": 280, "damage": 30, "type": "Undead", "level": 5},
+            {"name": "Ice Elemental", "hp": 400, "damage": 40, "type": "Elemental", "level": 6},
+            {"name": "Shadow Assassin", "hp": 350, "damage": 42, "type": "Stealth", "level": 6},
+            {"name": "Hellhound", "hp": 420, "damage": 40, "type": "Demonic", "level": 6},
+            {"name": "Frost Giant", "hp": 480, "damage": 45, "type": "Giant", "level": 6},
+            {"name": "Cursed Knight", "hp": 440, "damage": 50, "type": "Melee", "level": 6}
+        ],
+        "challenging": [
+            {"name": "Void Reaver", "hp": 700, "damage": 70, "type": "Void", "level": 8},
+            {"name": "Pyro Elemental", "hp": 600, "damage": 65, "type": "Elemental", "level": 7},
+            {"name": "Necromancer", "hp": 550, "damage": 60, "type": "Magic", "level": 7},
+            {"name": "Orc Commander", "hp": 680, "damage": 70, "type": "Melee", "level": 8},
+            {"name": "Vampire", "hp": 620, "damage": 65, "type": "Undead", "level": 7},
+            {"name": "Stone Titan", "hp": 700, "damage": 75, "type": "Giant", "level": 9},
+            {"name": "Dark Templar", "hp": 750, "damage": 80, "type": "Magic", "level": 8},
+            {"name": "Storm Wyrm", "hp": 700, "damage": 75, "type": "Dragon", "level": 8},
+            {"name": "Death Knight", "hp": 720, "damage": 70, "type": "Melee", "level": 9},
+            {"name": "Spectral Lich", "hp": 600, "damage": 65, "type": "Undead", "level": 7}
+        ],
+        "hard": [
+            {"name": "Dark Knight", "hp": 800, "damage": 90, "type": "Melee", "level": 10},
+            {"name": "Void Stalker", "hp": 850, "damage": 95, "type": "Void", "level": 11},
+            {"name": "Lich Lord", "hp": 900, "damage": 100, "type": "Undead", "level": 10},
+            {"name": "Chaos Mage", "hp": 820, "damage": 85, "type": "Magic", "level": 11},
+            {"name": "Infernal Behemoth", "hp": 950, "damage": 110, "type": "Demonic", "level": 12},
+            {"name": "Storm Giant", "hp": 980, "damage": 100, "type": "Giant", "level": 12},
+            {"name": "Black Dragon", "hp": 1000, "damage": 110, "type": "Dragon", "level": 13},
+            {"name": "Thunder Elemental", "hp": 900, "damage": 100, "type": "Elemental", "level": 10},
+            {"name": "Phantom Assassin", "hp": 850, "damage": 95, "type": "Stealth", "level": 11},
+            {"name": "Flame Titan", "hp": 1020, "damage": 115, "type": "Elemental", "level": 12}
+        ],
+        "advanced": [
+            {"name": "Ancient Dragon", "hp": 1500, "damage": 130, "type": "Dragon", "level": 15},
+            {"name": "Void Reaver", "hp": 1400, "damage": 120, "type": "Void", "level": 14},
+            {"name": "Fire Titan", "hp": 1600, "damage": 140, "type": "Elemental", "level": 16},
+            {"name": "Frost Colossus", "hp": 1700, "damage": 150, "type": "Giant", "level": 17},
+            {"name": "Abyssal Lord", "hp": 1400, "damage": 135, "type": "Demonic", "level": 14},
+            {"name": "Spectral Knight", "hp": 1350, "damage": 125, "type": "Undead", "level": 15},
+            {"name": "Chrono Warden", "hp": 1450, "damage": 130, "type": "Temporal", "level": 15},
+            {"name": "Storm Bringer", "hp": 1550, "damage": 145, "type": "Elemental", "level": 16},
+            {"name": "Phantom Warlord", "hp": 1500, "damage": 140, "type": "Void", "level": 16},
+            {"name": "Elder Behemoth", "hp": 1600, "damage": 150, "type": "Beast", "level": 17}
+        ],
+        "tough": [
+            {"name": "Death Titan", "hp": 2000, "damage": 200, "type": "Undead", "level": 18},
+            {"name": "Abyssal Colossus", "hp": 2200, "damage": 210, "type": "Demonic", "level": 19},
+            {"name": "Phoenix", "hp": 1800, "damage": 190, "type": "Elemental", "level": 17},
+            {"name": "Void Lord", "hp": 2100, "damage": 220, "type": "Void", "level": 19},
+            {"name": "Temporal Guardian", "hp": 1850, "damage": 200, "type": "Temporal", "level": 18},
+            {"name": "Nightmare Beast", "hp": 2300, "damage": 230, "type": "Beast", "level": 19},
+            {"name": "Thunder Dragon", "hp": 2500, "damage": 250, "type": "Dragon", "level": 20},
+            {"name": "Spectral Lord", "hp": 2400, "damage": 240, "type": "Undead", "level": 19},
+            {"name": "Storm Lord", "hp": 2300, "damage": 230, "type": "Elemental", "level": 20},
+            {"name": "Flame Titan", "hp": 2450, "damage": 250, "type": "Elemental", "level": 19}
+        ],
+        "dangerous": [
+            {"name": "Hellfire Behemoth", "hp": 3000, "damage": 300, "type": "Demonic", "level": 21},
+            {"name": "Elder Wyrm", "hp": 3100, "damage": 320, "type": "Dragon", "level": 22},
+            {"name": "Chaos Elemental", "hp": 2900, "damage": 310, "type": "Elemental", "level": 21},
+            {"name": "Titan Lord", "hp": 3200, "damage": 330, "type": "Giant", "level": 22},
+            {"name": "Void Beast", "hp": 2850, "damage": 300, "type": "Void", "level": 21},
+            {"name": "Time Reaver", "hp": 2950, "damage": 310, "type": "Temporal", "level": 21},
+            {"name": "Flame Phoenix", "hp": 2800, "damage": 290, "type": "Elemental", "level": 20},
+            {"name": "Shadow Dragon", "hp": 3100, "damage": 330, "type": "Dragon", "level": 22},
+            {"name": "Spectral Giant", "hp": 3200, "damage": 320, "type": "Undead", "level": 22},
+            {"name": "Chaos Colossus", "hp": 3300, "damage": 340, "type": "Elemental", "level": 23}
+        ],
+        "elite": [
+            {"name": "Demon King", "hp": 3500, "damage": 350, "type": "Demonic", "level": 25},
+            {"name": "Archangel", "hp": 3800, "damage": 360, "type": "Divine", "level": 26},
+            {"name": "World Serpent", "hp": 3700, "damage": 400, "type": "Serpent", "level": 27},
+            {"name": "Primordial Leviathan", "hp": 3600, "damage": 350, "type": "Water", "level": 28},
+            {"name": "Titan King", "hp": 4000, "damage": 410, "type": "Giant", "level": 27},
+            {"name": "Celestial Phoenix", "hp": 3700, "damage": 380, "type": "Elemental", "level": 26},
+            {"name": "Nightmare Lord", "hp": 3800, "damage": 390, "type": "Demonic", "level": 26},
+            {"name": "Cosmic Dragon", "hp": 3900, "damage": 420, "type": "Dragon", "level": 27},
+            {"name": "Void Overlord", "hp": 3800, "damage": 400, "type": "Void", "level": 27},
+            {"name": "Time Colossus", "hp": 4000, "damage": 420, "type": "Temporal", "level": 28}
+        ],
+        "epic": [
+            {"name": "Lich King", "hp": 1500, "damage": 120, "type": "Magic", "level": 20},
+            {"name": "Void Reaver", "hp": 1800, "damage": 150, "type": "Void", "level": 22},
+            {"name": "Thunder Titan", "hp": 2000, "damage": 200, "type": "Elemental", "level": 25},
+            {"name": "Ancient Dragon", "hp": 2500, "damage": 230, "type": "Dragon", "level": 24},
+            {"name": "Dread Wraith", "hp": 1400, "damage": 130, "type": "Undead", "level": 21},
+            {"name": "Behemoth", "hp": 2200, "damage": 190, "type": "Beast", "level": 23},
+            {"name": "Doom Bringer", "hp": 1700, "damage": 160, "type": "Demonic", "level": 21},
+            {"name": "Spectral Dragon", "hp": 2100, "damage": 180, "type": "Undead", "level": 22},
+            {"name": "Storm Lord", "hp": 2300, "damage": 220, "type": "Elemental", "level": 23},
+            {"name": "Fire Wyrm", "hp": 2400, "damage": 210, "type": "Dragon", "level": 24}
+        ],
+        "legendary": [
+            {"name": "Demon Lord", "hp": 3000, "damage": 300, "type": "Demonic", "level": 30},
+            {"name": "Phoenix Guardian", "hp": 3500, "damage": 350, "type": "Elemental", "level": 32},
+            {"name": "Elder Wyrm", "hp": 4000, "damage": 400, "type": "Dragon", "level": 35},
+            {"name": "Nightmare Beast", "hp": 3200, "damage": 310, "type": "Demonic", "level": 31},
+            {"name": "Archangel", "hp": 3400, "damage": 330, "type": "Divine", "level": 32},
+            {"name": "Void Titan", "hp": 3700, "damage": 360, "type": "Void", "level": 33},
+            {"name": "Leviathan", "hp": 3800, "damage": 370, "type": "Water", "level": 34},
+            {"name": "Tarrasque", "hp": 3900, "damage": 380, "type": "Beast", "level": 35},
+            {"name": "World Serpent", "hp": 4100, "damage": 410, "type": "Serpent", "level": 35},
+            {"name": "Celestial Phoenix", "hp": 4200, "damage": 420, "type": "Elemental", "level": 35}
+        ],
+        "mythic": [
+            {"name": "Primordial Leviathan", "hp": 5000, "damage": 500, "type": "Water", "level": 40},
+            {"name": "Celestial Seraph", "hp": 5500, "damage": 550, "type": "Divine", "level": 42},
+            {"name": "Abyssal Overlord", "hp": 6000, "damage": 600, "type": "Demonic", "level": 45},
+            {"name": "Temporal Dragon", "hp": 5300, "damage": 540, "type": "Temporal", "level": 41},
+            {"name": "Chaos Lord", "hp": 5800, "damage": 570, "type": "Void", "level": 43},
+            {"name": "Titan of the Deep", "hp": 6200, "damage": 620, "type": "Water", "level": 44},
+            {"name": "Dread Leviathan", "hp": 6000, "damage": 610, "type": "Beast", "level": 44},
+            {"name": "Elder Phoenix", "hp": 5900, "damage": 600, "type": "Elemental", "level": 44},
+            {"name": "Void Monarch", "hp": 6400, "damage": 640, "type": "Void", "level": 45},
+            {"name": "Thunder Colossus", "hp": 6500, "damage": 650, "type": "Elemental", "level": 45}
+        ],
+        "omniversal": [
+            {"name": "Eternal Overlord", "hp": 8000, "damage": 800, "type": "Omniversal", "level": 50},
+            {"name": "Time Warden", "hp": 9000, "damage": 900, "type": "Temporal", "level": 52},
+            {"name": "Cosmic Destructor", "hp": 10000, "damage": 1000, "type": "Omniversal", "level": 55},
+            {"name": "Infinity Beast", "hp": 8500, "damage": 850, "type": "Beast", "level": 51},
+            {"name": "Dimensional Tyrant", "hp": 9200, "damage": 930, "type": "Void", "level": 52},
+            {"name": "Reality Reaper", "hp": 9500, "damage": 970, "type": "Void", "level": 53},
+            {"name": "Omni Phoenix", "hp": 9300, "damage": 960, "type": "Elemental", "level": 54},
+            {"name": "Timeless Leviathan", "hp": 9800, "damage": 990, "type": "Water", "level": 54},
+            {"name": "Cosmic Serpent", "hp": 9700, "damage": 980, "type": "Serpent", "level": 55},
+            {"name": "Universal Colossus", "hp": 10500, "damage": 1050, "type": "Omniversal", "level": 55}
+        ]
+    }
+}
