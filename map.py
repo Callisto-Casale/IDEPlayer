@@ -3,7 +3,7 @@ import random
 import os
 
 class Map:
-    def __init__(self, width, height, viewport_width, viewport_height):
+    def __init__(self, width, height, viewport_width, viewport_height, player):
         self.width = width
         self.height = height
         self.viewport_width = viewport_width
@@ -11,6 +11,7 @@ class Map:
         
         self.player_x = self.width // 2
         self.player_y = self.height // 2
+        self.player = player
         
         self.map = self.generate_map()
     
@@ -78,17 +79,32 @@ class Map:
             self.player_y = y
 
     def show_map(self):
-        os.system("cls")
-        # Show the map with the viewport centered on the player
-        x, y = self.get_player_position()
-        width, height = self.get_viewport()
+        player_info = self.player.get_player_info()  # Get player info to display on the right side
         
-        for j in range(y - height // 2, y + height // 2):
-            for i in range(x - width // 2, x + width // 2):
-                if i >= 0 and i < self.width and j >= 0 and j < self.height:
-                    print(self.map[j][i], end=" ")
+        os.system("cls" if os.name == "nt" else "clear")  # Clear the console for a fresh display
+
+        # Get player's position and viewport size
+        x, y = self.get_player_position()
+        viewport_width, viewport_height = self.get_viewport()
+
+        map_viewport = []  # Store the map lines
+        for j in range(y - viewport_height // 2, y + viewport_height // 2):
+            line = ""
+            for i in range(x - viewport_width // 2, x + viewport_width // 2):
+                if 0 <= i < self.width and 0 <= j < self.height:
+                    line += self.map[j][i] + " "
                 else:
-                    print(" ", end="")
-            print()
+                    line += "  "  # Fill out of bounds with spaces
+            map_viewport.append(line)
+
+        # Ensure both the map and player info have the same number of lines
+        max_lines = max(len(map_viewport), len(player_info))
+        map_viewport += [''] * (max_lines - len(map_viewport))  # Pad map if shorter
+        player_info += [''] * (max_lines - len(player_info))  # Pad player info if shorter
+
+        # Print the map with player info side by side
+        for map_line, info_line in zip(map_viewport, player_info):
+            print(f"{map_line:<{viewport_width * 2}}    {info_line}")
+
 
 
