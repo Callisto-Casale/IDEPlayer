@@ -1,3 +1,6 @@
+import json
+import random
+
 class Enemy:
     def __init__(self, name, hp, damage, type, level):
         self.name = name
@@ -32,6 +35,37 @@ class Enemy:
         ]
         
     def get_enemy_list(self):
-        return [
-            Enemy("Goblin", 100, 10, "Melee", 1),
-        ]
+        with open("enemy_list.json", "r") as file:
+            enemies = json.load(file)
+        
+        return enemies
+    
+    def get_specific_enemy(self):
+        enemies = self.get_enemy_list()
+        
+        for enemy in enemies:
+            if enemy["name"] == self.name:
+                return enemy
+    
+    def get_level_enemy(self, type: str):
+        enemies = self.get_enemy_list()
+        
+        return enemies["enemies"][type]
+            
+    def get_random_enemy(self, type):
+        enemies = self.get_level_enemy(type)
+        
+        return random.choice(enemies)
+    
+    def get_random_level_enemy(self, level):
+        enemies = self.get_enemy_list()
+        
+        tmp_list = []
+        
+        for _type in enemies["enemies"]:
+            for enemy in enemies["enemies"][_type]:
+                if enemy["level"] == level or enemy["level"] == level - 1 or enemy["level"] == level + 1:
+                    tmp_list.append(enemy)
+        
+        return random.choice(tmp_list)
+
